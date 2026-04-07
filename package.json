@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "mkdir -p .next && cp -r index.js models routes node_modules package.json .next/",
+    "build": "mkdir -p .next/standalone && cp -r index.js models routes node_modules package.json .next/standalone/ && cp index.js .next/standalone/server.js",
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
